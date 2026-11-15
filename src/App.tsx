@@ -13,7 +13,7 @@ import DragAndDropList from './pages/DragAndDropList';
 function App() {
   return (
     <div className="App">
-      <Router basename="/Homework-02-Component-Add-Remove">
+      <Router basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/moveItemList" element={<MoveItemList />} />
